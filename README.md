@@ -8,6 +8,14 @@ Helper repo for build Janus WebRTC Server on build.snapcraft.io
 * Recordings: `$SNAP_COMMON/share/recordings` (`/var/snap/janus-gateway/common/share/recordings`)
 * Voicemail: `$SNAP_COMMON/share/voicemail` (`/var/snap/janus-gateway/common/share/voicemail`)
 
+## Installing on debian
+* apt update
+* apt install snapd
+* snap install core
+* snap install janus-gateway
+* snap start janus-gateway
+* Make a redirect from the http://domain.com/janus to https://domain.com/janus OR change sertificates path /var/snap/janus-gateway/common/etc
+
 <br>
 
 [![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-white.svg)](https://snapcraft.io/janus-gateway)
